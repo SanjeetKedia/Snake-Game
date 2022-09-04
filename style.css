@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+#snake-game {
+  border: 5px solid black;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(48, 183, 201);
+}
+
+#game {
+  display: flex;
+}
+
+p {
+  color: rgba(255, 0, 0, 0.499);
+}
+
+#game-over {
+  opacity: 0;
+}
+
+#apples,
+#apples-highscore {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 1em;
+  font-size: 50px;
+  font-family: "Press Start 2P", cursive;
+}
+
+#restart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: auto;
+  font: inherit;
+  margin-top: 300px;
+  font-family: "Press Start 2P", cursive;
+  border: 5px solid;
+  border-radius: 2rem;
+}
